@@ -1,0 +1,5 @@
+#!/bin/sh
+
+file="path/to/bookmarks_file.html"
+[ ! -z "$1" ] && file="$1"
+sed -i "s# ICON=\"[^\"]\+\"##g" "$file"
